@@ -7,7 +7,7 @@ html, body {
 }
 
 body {
-    background-color: #FFA4A4;
+    background-color: #E6E7E9;
     margin: 0;
     /* padding: 15px 0px 15px 0px; */ /* top right bottom left */
     padding: 15px 0px; /* top bottom -- right left */
@@ -17,7 +17,7 @@ body {
     width: 55%; /* centrado en pantalla + margenes en los lados, imitando el wireframe propuesto de 1920px de width */
     height: 100%;
     margin: 0 auto;
-    background-color: #C4C4C4;
+    background-color: #E6E7E9;
 }
 
 /* HEADER */
