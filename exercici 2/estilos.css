@@ -1,0 +1,1406 @@
+* {
+    box-sizing: border-box; /* hace que los paddings se queden en su caja! */
+}
+
+html, body {
+    height: calc(100vh - 30px);
+}
+
+body {
+    background-color: #E6E7E9;
+    margin: 0;
+    /* padding: 15px 0px 15px 0px; */ /* top right bottom left */
+    padding: 15px 0px; /* top bottom -- right left */
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container { /* en container encontramos todos los elementos centrados */
+    width: 55%; /* centrado en pantalla + margenes en los lados, imitando el wireframe propuesto de 1920px de width */
+    height: 100%;
+    margin: 0 auto;
+    background-color: #E6E7E9;
+}
+
+/* HEADER */
+
+.header {
+    width: 100%;
+    height: 12.27%; /* respecto al 100% del height del container */
+    /* padding: 5px; */
+
+    /* background: #D36569; */
+    background: url('./img/header-export.png') no-repeat center center/cover;
+}
+
+.logo {
+    background: url('./img/logo.png') no-repeat center center/cover;
+    width: 20%;
+    height: 50%;
+    float: left; /* mueve el contenido hacia la izquierda */
+    margin: 30px;
+}
+
+.header .box {
+    /* background: black; */
+    width: 13.5%;
+    height: 35%;
+    float: right; /* mueve el contenido hacia la derecha */
+    margin: 40px;
+}
+
+.box {
+    display: inline-flex;
+}
+
+.sphere {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center; 
+    text-decoration: none;
+    margin: 5px 5px;
+    border-radius: 50%;
+}
+
+.sphere1 {
+    background: url('./img/tw-2.png') no-repeat center center/cover;
+}
+
+.sphere2 {
+    background: url('./img/fb-2.png') no-repeat center center/cover;
+}
+
+.sphere3 {
+    background: url('./img/yt-2.png') no-repeat center center/cover;
+}
+
+/* NAV */
+
+.menubox {
+    display: inline-flex; /* organizar los elementos a lo largo del ancho del menubox */
+    width: 100%;
+    height: 4.90%; /* todas las alturas son calculadas manualmente a partir del wireframe propuesto */
+    margin-top: 2.15%; /* separado del header */
+}
+
+.menu1 {
+    background: #000;
+    width: 20%; /* dividiendo el 100% del width de .menubox entre 5 */
+    height: 100%;
+    margin-right: 3px; /* separación entre menu1 y menu2 */
+    margin-left: 3px; /* separación inicial margen izq. - menu 1*/
+    padding: 17px 0px;
+    transition-duration: 0.6s;
+}
+
+.menu1:hover {
+    background: #D36569;
+    color: #fff;
+}
+
+.menu1t {
+    color: #fff;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.menu2 {
+    background: #000;
+    width: 20%;
+    height: 100%;
+    margin-right: 3px; /* separación entre menu2 y menu3 */
+    padding: 17px 0px;
+    transition-duration: 0.6s;
+}
+
+.menu2:hover {
+    background: #D36569;
+    color: #fff;
+}
+
+.menu2t {
+    color: #fff;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.menu3 {
+    background: #000;
+    width: 20%;
+    height: 100%;
+    margin-right: 3px; /* separación entre menu3 y menu4 */
+    padding: 17px 0px;
+    transition-duration: 0.6s;
+}
+
+.menu3:hover {
+    background: #D36569;
+    color: #fff;
+}
+
+.menu3t {
+    color: #fff;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.menu4 {
+    background: #000;
+    width: 20%;
+    height: 100%;
+    margin-right: 3px; /* separación entre menu4 y menu5 */
+    padding: 17px 0px;
+    transition-duration: 0.6s;
+}
+
+.menu4:hover {
+    background: #D36569;
+    color: #fff;
+}
+
+.menu4t {
+    color: #fff;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.menu5 {
+    background: #000;
+    width: 20%;
+    height: 100%;
+    margin-right: 3px; /* separación final menu5 - margen derecho */
+    padding: 17px 0px;
+    transition-duration: 0.6s;
+}
+
+.menu5:hover {
+    background: #D36569;
+    color: #fff;
+}
+
+.menu5t {
+    color: #fff;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+}
+
+/* SECTION */
+
+.cards {
+    display: inline-flex;
+    width: 100%;
+    height: 19.63%;
+    margin-top: 2.56%;
+}
+
+.cards1 {
+    /* background: #858688; */
+    background: url('./img/estrategia-export.png') no-repeat center center/cover;
+    width: 33.3%; /* dividiendo el 100% del width de .cards entre 3 */
+    height: 100%;
+    margin-right: 10px; /* separación entre cards1 y cards2 */
+}
+
+.title1 {
+    height: 33%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    /*
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    */
+    color: #fff;
+    text-align: center;
+    padding: 18px 55px;
+}
+
+.subtitle1 {
+    height: 51%;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /*
+    display: flex;
+    align-items: center;
+    text-align: center;
+    */
+    color: #fff;
+    text-align: center;
+    padding: 16px 45px;
+}
+
+.button1 {
+    height: 16%;
+    background: #000;
+    color: #fff;
+
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+
+    padding: 10px 0;
+    transition-duration: 0.6s;
+}
+
+.button1:hover {
+    background: #D36569;
+    color: #fff;
+}
+
+.cards2 {
+    /* background: #858688; */
+    background: url('./img/fotografia-export.png') no-repeat center center/cover;
+    width: 33.3%;
+    height: 100%;
+    margin-right: 10px; /* separación entre cards2 y cards3 */
+}
+
+.title2 {
+    height: 33%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    /*
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    */
+    color: #fff;
+    text-align: center;
+    padding: 25px 0px;
+}
+
+.subtitle2 {
+    height: 51%;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /*
+    display: flex;
+    align-items: center;
+    text-align: center;
+    */
+    color: #fff;
+    text-align: center;
+    padding: 16px 50px;
+}
+
+.button2 {
+    height: 16%;
+    background: #000;
+    color: #fff;
+
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+
+    padding: 10px 0;
+    transition-duration: 0.6s;
+}
+
+.button2:hover {
+    background: #D36569;
+    color: #fff;
+}
+
+.cards3 {
+    /* background: #858688; */
+    background: url('./img/300-export.png') no-repeat center center/cover;
+    width: 33.3%;
+    height: 100%;
+}
+
+.title3 {
+    height: 33%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    /*
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    */
+    color: #fff;
+    text-align: center;
+    padding: 25px 40px;
+}
+
+.subtitle3 {
+    height: 51%;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /*
+    display: flex;
+    align-items: center;
+    text-align: center;
+    */
+    color: #fff;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.button3 {
+    height: 16%;
+    background: #000;
+    color: #fff;
+
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+
+    padding: 10px 0;
+    transition-duration: 0.6s;
+}
+
+.button3:hover {
+    background: #D36569;
+    color: #fff;
+}
+
+/* SECTION */
+
+.articles {
+    display: inline-flex;
+    width: 100%;
+    height: 46.32%;
+    margin-top: 2.45%;
+    background: #D36569;
+}
+
+    .article {
+        background: rgba(255, 255, 255, 0.4);
+        width: 70%;
+        height: 100%;
+        margin-left: 21%; /* respetando los márgenes para centrar lo más posible el div .article */
+        margin-right: 21%; /* respetando los márgenes para centrar lo más posible el div .article */
+    }
+
+        .headerarticle {
+            height: 3.33%;
+        }
+
+        .article1 {
+            display: inline-flex;
+            flex-direction: row;
+            width: 100%;
+            height: 20%;
+            padding: 7px 20px;
+        }
+
+            .foto1 {
+                /* background: black; */
+                background: url('./img/min1.png') no-repeat center center/cover;
+                height: 100%;
+                width: 14%;
+            }
+
+            .letra1 {
+                display: inline-flex;
+                flex-direction: column;
+                /* background: chartreuse; */
+                height: 100%;
+                width: 61%;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+                .titlearticle1 {
+                    height: 38%;
+                    width: 100%;
+                    /* background: blue; */
+                    color: #000;
+
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 20px;
+                    /* identical to box height */
+                    
+                    display: flex;
+                    align-items: center;
+                }
+
+                .subtarticle1 {
+                    height: 62%;
+                    width: 100%;
+                    /* background: turquoise; */
+                    color: #000;
+
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+
+            .buttonmore1 {
+                display: inline-flex;
+                flex-direction: column;
+                /* background: crimson; */
+                height: 100%;
+                width: 25%;
+            }
+
+                .spaceBM1a {
+                    height: 63.75%;
+                    width: 100%;
+                }
+
+                .BM1 {
+                    height: 25%;
+                    width: 100%;
+                    background: #000;
+                    color: #fff;
+
+                    font-family: 'Josefin Sans';
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 12px;
+                    /* identical to box height */
+
+                    text-align: center;
+                    padding: 4px 0;
+                    transition-duration: 0.6s;
+                }
+
+                .BM1:hover {
+                    background: #D36569;
+                    color: #fff;
+                }
+
+                .spaceBM1b {
+                    height: 11.25%;
+                    width: 100%;
+                }
+
+        .article2 {
+            display: inline-flex;
+            flex-direction: row;
+            width: 100%;
+            height: 20%;
+            padding: 7px 20px;
+        }
+
+            .foto2 {
+                /* background: black; */
+                background: url('./img/min2.png') no-repeat center center/cover;
+                height: 100%;
+                width: 14%;
+            }
+
+            .letra2 {
+                /* background: chartreuse; */
+                height: 100%;
+                width: 61%;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+                .titlearticle2 {
+                    height: 38%;
+                    width: 100%;
+                    /* background: blue; */
+                    color: #000;
+
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 20px;
+                    /* identical to box height */
+                    
+                    display: flex;
+                    align-items: center;
+                }
+
+                .subtarticle2 {
+                    height: 62%;
+                    width: 100%;
+                    /* background: turquoise; */
+                    color: #000;
+
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+
+            .buttonmore2 {
+                /* background: crimson; */
+                height: 100%;
+                width: 25%;
+            }
+
+                .spaceBM2a {
+                    height: 63.75%;
+                    width: 100%;
+                }
+
+                .BM2 {
+                    height: 25%;
+                    width: 100%;
+                    background: #000;
+                    color: #fff;
+
+                    font-family: 'Josefin Sans';
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 12px;
+                    /* identical to box height */
+
+                    text-align: center;
+                    padding: 5px 0;
+                    transition-duration: 0.6s;
+                }
+
+                .BM2:hover {
+                    background: #D36569;
+                    color: #fff;
+                }
+
+                .spaceBM2b {
+                    height: 11.25%;
+                    width: 100%;
+                }
+
+        .article3 {
+            display: inline-flex;
+            flex-direction: row;
+            width: 100%;
+            height: 20%;
+            padding: 7px 20px;
+        }
+
+            .foto3 {
+                /* background: black; */
+                background: url('./img/min3.png') no-repeat center center/cover;
+                height: 100%;
+                width: 14%;
+            }
+
+            .letra3 {
+                /* background: chartreuse; */
+                height: 100%;
+                width: 61%;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+                .titlearticle3 {
+                    height: 38%;
+                    width: 100%;
+                    /* background: blue; */
+                    color: #000;
+
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 20px;
+                    /* identical to box height */
+                    
+                    display: flex;
+                    align-items: center;
+                }
+
+                .subtarticle3 {
+                    height: 62%;
+                    width: 100%;
+                    /* background: turquoise; */
+                    color: #000;
+
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+
+            .buttonmore3 {
+                /* background: crimson; */
+                height: 100%;
+                width: 25%;
+            }
+
+                .spaceBM3a {
+                    height: 63.75%;
+                    width: 100%;
+                }
+
+                .BM3 {
+                    height: 25%;
+                    width: 100%;
+                    background: #000;
+                    color: #fff;
+
+                    font-family: 'Josefin Sans';
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 12px;
+                    /* identical to box height */
+
+                    text-align: center;
+                    padding: 4px 0;
+                    transition-duration: 0.6s;
+                }
+
+                .BM3:hover {
+                    background: #D36569;
+                    color: #fff;
+                }
+
+                .spaceBM3b {
+                    height: 11.25%;
+                    width: 100%;
+                }
+
+        .article4 {
+            display: inline-flex;
+            flex-direction: row;
+            width: 100%;
+            height: 20%;
+            padding: 7px 20px;
+        }
+
+            .foto4 {
+                /* background: black; */
+                background: url('./img/min4.png') no-repeat center center/cover;
+                height: 100%;
+                width: 14%;
+            }
+
+            .letra4 {
+                /* background: chartreuse; */
+                height: 100%;
+                width: 61%;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+                .titlearticle4 {
+                    height: 38%;
+                    width: 100%;
+                    /* background: blue; */
+                    color: #000;
+
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 20px;
+                    /* identical to box height */
+                    
+                    display: flex;
+                    align-items: center;
+                }
+
+                .subtarticle4 {
+                    height: 62%;
+                    width: 100%;
+                    /* background: turquoise; */
+                    color: #000;
+
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+
+            .buttonmore4 {
+                /* background: crimson; */
+                height: 100%;
+                width: 25%;
+            }
+
+                .spaceBM4a {
+                    height: 63.75%;
+                    width: 100%;
+                }
+
+                .BM4 {
+                    height: 25%;
+                    width: 100%;
+                    background: #000;
+                    color: #fff;
+
+                    font-family: 'Josefin Sans';
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 12px;
+                    /* identical to box height */
+
+                    text-align: center;
+                    padding: 4px 0;
+                    transition-duration: 0.6s;
+                }
+
+                .BM4:hover {
+                    background: #D36569;
+                    color: #fff;
+                }
+
+                .spaceBM4b {
+                    height: 11.25%;
+                    width: 100%;
+                }
+
+.footerarticle {
+    height: 17.33%;
+    padding: 20px 20px;
+}
+
+.buttonEMA {
+    background: #000;
+    color: #fff;
+    height: 100%;
+    width: 40%;
+
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+
+    text-align: center;
+    padding: 12px;
+    transition-duration: 0.6s;
+}
+
+.buttonEMA:hover {
+    background: #D36569;
+    color: #fff;
+}
+
+/* FOOTER */
+
+.footer {
+    background: #000;
+    width: 100%;
+    height: 7.26%;
+    margin-top: 2.45%;
+}
+
+.footerL1 {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
+    text-align: center;
+    cursor: default;
+    padding: 15px 0px 5px 0px; /* top R bottom L */
+}
+
+.footerL2 {
+    display: inline-flex;
+    width: 100%;
+    padding: 5px 0px 15px 0px;
+}
+
+.L21 {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    width: 20%;
+}
+
+.L22 {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    width: 20%;
+}
+
+.L23 {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    width: 20%;
+}
+
+.footerL2a,
+.footerL2b {
+    width: 20%;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1850px) {
+    .container {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1700px) {
+    .logo {
+        margin: 28px;
+    }
+
+    .header .box {
+        margin: 28px;
+    }
+
+    .container {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1480px) {
+    .container {
+        width: 75%;
+    }
+}
+
+@media (max-width: 1330px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1300px) {
+    .header .box {
+        margin: 35px;
+    }
+
+    .title2 {
+        padding: 24px 55px;
+    }
+
+    .title1,
+    .title3 {
+        padding: 18px 55px;
+    }
+
+    .title1,
+    .title2,
+    .title3 {
+        height: 33%;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        color: #fff;
+        text-align: center;
+    }
+
+    .subtitle3 {
+        padding: 30px 45px;
+    }
+
+    .subtitle1,
+    .subtitle2 {
+        padding: 16px 45px;
+    }
+    
+    .subtitle1,
+    .subtitle2,
+    .subtitle3 {
+        height: 51%;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #fff;
+        text-align: center;
+    }
+    
+    .button1,
+    .button2,
+    .button3 {
+        height: 16%;
+        background: #000;
+        color: #fff;
+    
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 12px;
+        text-align: center;
+    
+        padding: 10px 0;
+        transition-duration: 0.6s;
+    }
+    
+    .article {
+        width: 100%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .logo {
+        width: 25%;
+        float: left;
+        margin: 28px;
+    }
+    
+    .header .box {
+        width: 20%;
+        float: right;
+        margin: 30px;
+    }
+
+    .container {
+        width: 75%;
+    }
+
+    .subtitle3 {
+        padding: 40px 45px;
+    }
+
+    .article {
+        width: 100%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .footerL1 {
+        padding: 5px 0px 5px 0px;
+    }
+
+    .footerL2 {
+        padding: 5px 0px 5px 0px;
+    } 
+}
+
+@media (max-width: 950px) {
+    .menu1t,
+    .menu2t,
+    .menu3t,
+    .menu4t,
+    .menu5t {
+        color: #fff;
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 14px;
+        text-align: center;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .article {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media (max-width: 800px) {
+    .article {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .title1,
+    .title2,
+    .title3,
+    .subtitle1,
+    .subtitle2 {
+        padding: 16px 16px;
+    }
+
+    .footerL2a,
+    .footerL2b {
+        width: 12.5%;
+    }
+
+    .L21,
+    .L22,
+    .L23 {
+        width: 25%;
+    }
+}
+
+@media (max-width: 780px) {
+    .menu1t,
+    .menu2t,
+    .menu3t,
+    .menu4t,
+    .menu5t {
+        color: #fff;
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 12px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 640px) {
+    .logo {
+        width: 30%;
+        float: left;
+        margin: 28px;
+    }
+    
+    .header .box {
+        width: 30%;
+        float: right;
+        margin: 34px 10px 34px 10px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .article {
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .titlearticle1,
+    .titlearticle2,
+    .titlearticle3,
+    .titlearticle4 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .subtarticle1,
+    .subtarticle2,
+    .subtarticle3,
+    .subtarticle4 {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .buttonEMA {
+        font-size: 12px;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .footerL2a,
+    .footerL2b {
+        width: 5%;
+    }
+
+    .L21 {
+        width: 25%;
+    }
+
+    .L22 {
+        width: 40%;
+    }
+
+    .L23 {
+        width: 25%;
+    }
+}
+
+@media (max-width: 550px) {
+    .title1,
+    .title2,
+    .title3,
+    .subtitle1,
+    .subtitle2 {
+        padding: 10px 0px;
+    }
+
+    .subtitle3 {
+        padding: 20px 0px;
+    }
+
+    .button1,
+    .button2,
+    .button3 {
+        height: 16%;
+        background: #000;
+        color: #fff;
+    
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 10px;
+        text-align: center;
+    
+        padding: 10px 0;
+        transition-duration: 0.6s;
+    }
+
+    .menu5 {
+        padding: 11px 0px;
+    }
+    
+    .titlearticle1,
+    .titlearticle2,
+    .titlearticle3,
+    .titlearticle4 {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .subtarticle1,
+    .subtarticle2,
+    .subtarticle3,
+    .subtarticle4 {
+        font-size: 12px;
+        line-height: 19px;
+    }
+
+    .BM1,
+    .BM2,
+    .BM3,
+    .BM4 {
+        font-size: 10px;
+    }
+
+    .buttonEMA {
+        font-size: 12px;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .footerL1 {
+        padding: 5px; 
+    }
+}
+
+@media (max-width: 450px) {
+    .logo {
+        width: 40%;
+        float: left;
+        margin: 30px;
+    }
+    
+    .header .box {
+        width: 30%;
+        float: right;
+        margin: 34px 30px 34px 30px;
+    }
+
+    .button3 {
+        padding: 4px 0;
+    }
+
+    .cards1,
+    .cards2 {
+        margin-right: 5px;
+    }
+
+    .title1,
+    .title2,
+    .title3 {
+        font-size: 12px;
+    }
+
+    .subtitle1,
+    .subtitle2,
+    .subtitle3 {
+        font-size: 12px;
+    }
+
+    .menu1,
+    .menu2,
+    .menu3,
+    .menu4 {
+        padding: 18px 0px;
+    }
+
+    .menu5 {
+        padding: 14px 0px;
+    }
+
+    .menu1t,
+    .menu2t,
+    .menu3t,
+    .menu4t,
+    .menu5t {
+        color: #fff;
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 10px;
+        text-align: center;
+    }
+
+    .BM1,
+    .BM2,
+    .BM3,
+    .BM4 {
+        font-size: 10px;
+    }
+
+    .buttonEMA {
+        font-size: 10px;
+        padding: 8px 0px 8px 0px;
+        height: 100%;
+    }
+
+    .headerarticle {
+        height: 2%;
+    }
+
+    .article1,
+    .article2,
+    .article3,
+    .article4 {
+        padding: 7px 10px;
+        height: 22.5%;
+    }
+
+    .footerarticle {
+        padding: 2px 20px 4px 20px;
+        height: 8%;
+    }
+
+    .footer {
+        height: 10%;
+    }
+}
+
+@media (max-width: 420px) {
+    .header .box {
+        margin: 28px 30px 28px 0px;
+    }
+
+    /* --- */
+
+    .header {
+        display: inline-flex;
+        flex-direction: row;
+    }
+    
+    .logo {
+        width: 50%;
+        height: 50%;
+        margin: 26px 10px 26px 10px;
+    }
+    
+    .header .box {
+        width: 50%;
+        height: 45%;
+        margin: 28px 10px 28px 10px;
+    }
+    
+    .box {
+        display: inline-flex;
+        flex-direction: row;
+    }
+    
+    .sphere {
+        margin: 5px 5px;
+        border-radius: 50%;
+    }
+    
+    .sphere1 {
+        height: 30%;
+        width: 30%;
+        margin-left: 20px;
+    }
+    
+    .sphere2 {
+        height: 30%;
+        width: 30%;
+    }
+    
+    .sphere3 {
+        height: 30%;
+        width: 30%;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 375px) {
+    .container {
+        width: 100%;
+    }
+
+    .cards1,
+    .cards2 {
+        margin-right: 3px;
+    }
+
+    .subtitle1 {
+        padding: 0px 2px;
+    }
+
+    .sphere3 {
+        margin-right: 0px;
+    }
+
+    .footerarticle {
+        padding: 2px 10px 4px 10px;
+    }
+}
